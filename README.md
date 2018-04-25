@@ -1,5 +1,10 @@
 # virsical-sign
 
+
+[![npm](https://img.shields.io/npm/v/virsical-sign.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/virsical-sign)
+[![NPM downloads](http://img.shields.io/npm/dm/virsical-sign.svg?style=flat-plastic)](https://npmjs.org/package/virsical-sign)
+
+
 > 威思客签名算法
 
 ## 使用
