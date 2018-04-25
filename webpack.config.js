@@ -21,9 +21,8 @@ module.exports = {
         include: [path.join(__dirname, './src')]
       }
     ]
+  },
+  externals: {
+    "crypto-js": 'crypto-js'
   }
-  // ,
-  // externals: {
-  //   "crypto-js": 'crypto-js'
-  // }
 };
