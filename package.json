@@ -1,0 +1,38 @@
+{
+  "name": "virsical-sign",
+  "version": "1.0.0",
+  "private": false,
+  "author": "kairi",
+  "email": "kairi1227@126.com",
+  "license": "Version 2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wafersystems/virsical-sign.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "virsical"
+  ],
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack -p",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  }
+}
