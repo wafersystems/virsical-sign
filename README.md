@@ -16,5 +16,5 @@
 
 const url = 'http://localhost:8080/api/user?id=1&lang=zh_CN&tokenSn=1111';
 const token = 'ADFASA23427UIOUKIJO9W3YOHSLEFJS93U0RJIFSD';
- VircalSign.getSign(url, token);
+VircalSign.getSign(url, token);
 ```
