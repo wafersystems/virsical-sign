@@ -1,6 +1,6 @@
 {
   "name": "virsical-sign",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "private": false,
   "author": "kairi",
   "email": "kairi1227@126.com",
@@ -17,7 +17,8 @@
     "virsical"
   ],
   "dependencies": {
-    "crypto-js": "^3.1.9-1"
+    "crypto-js": "^3.1.9-1",
+    "url-parse": "^1.4.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

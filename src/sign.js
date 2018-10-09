@@ -1,12 +1,12 @@
 import {MD5} from 'crypto-js';
+import parse from 'url-parse';
 
 export const getSign = (url, token) => {
+  const urlOjb = parse(url, true);
+
   let paramList = [token || sessionStorage.getItem('token') || ''];
-  if(url && url.indexOf('?') > -1) {
-    const temp = url.split('?')[1].split('&');
-    for(const p of temp) {
-      paramList.push(p.split('=').join(''));
-    }
+  for (const p in urlOjb.query) {
+    paramList.push(`${p}${decodeURIComponent(urlOjb.query[p]).trim()}`);
   }
   return processJson(paramList)
 };
