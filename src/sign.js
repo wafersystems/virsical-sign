@@ -6,7 +6,7 @@ export const getSign = (url, token) => {
 
   let paramList = [token || sessionStorage.getItem('token') || ''];
   for (const p in urlOjb.query) {
-    paramList.push(`${p}${decodeURIComponent(urlOjb.query[p]).trim()}`);
+    paramList.push(`${p}${urlOjb.query[p].trim()}`);
   }
   return processJson(paramList)
 };
