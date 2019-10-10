@@ -26,6 +26,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
+    "mem": "^5.1.1",
     "webpack": "^3.10.0"
   },
   "scripts": {
