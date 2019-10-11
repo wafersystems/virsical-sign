@@ -16,13 +16,13 @@ const processJson = (data) => {
 
 /**
  *
- * @param timestamp
  * @param url
  * @param key
+ * @param timestamp
  * @param body
  * @returns {*}
  */
-export const sign = (timestamp, url, key, body) => {
+export const getSign = (url, key, timestamp, body) => {
   const urlOjb = parse(url, true);
   let paramList = [];
   // 1 add key
@@ -44,17 +44,6 @@ export const sign = (timestamp, url, key, body) => {
     paramList.push(body);
   }
   return processJson(paramList)
-};
-
-
-/**
- *  get url sing with key.
- * @param url
- * @param key
- * @param body
- */
-export const getSign = (url, key, body) => {
-  return sign(new Date().getTime(), url, key, body);
 };
 
 let VirsicalSign = {};

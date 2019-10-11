@@ -23,11 +23,12 @@
  //or
  //import {getSign} from 'virsical-sign';
 
+const timestamp = new Date().getTime();
 const url = 'http://localhost:8080/api/user?id=1&lang=zh_CN&tokenSn=1111';
 const key = '123';
 const body = 'XXX'; // 可选
 
-VircalSign.getSign(url, key, body);
+VircalSign.getSign(url, key,timestamp, body);
 ```
 
 &nbsp; 
