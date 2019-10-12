@@ -6,7 +6,7 @@
 import VirsicalSign from '../src/sign';
 
 const url = 'http://localhost:8080/api/user?';
-const parameterWithBlank = 'id=1&lang=zh_CN&tokenSn=1111&name= ABC';
+const parameterWithBlank = 'z=1&id=1&lang=zh_CN&tokenSn=1111&name= ABC';
 const parameter = 'id=1&lang=zh_CN&tokenSn=1111&name=ABC';
 const body = JSON.stringify({ a: 1, b: 2 });
 
