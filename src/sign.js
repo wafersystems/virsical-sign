@@ -34,7 +34,7 @@ export const getSign = (url, key, timestamp, body) => {
   // 4 add query parameter
   paramList.push('{');
   const tmp = [];
-  Object.keys(urlOjb.query).forEach(key => {
+  Object.keys(urlOjb.query).sort().forEach(key => {
     tmp.push(`${key}=${urlOjb.query[key]}`);
   });
   paramList.push(tmp.toString());
