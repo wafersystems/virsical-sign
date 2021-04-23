@@ -1,3 +1,4 @@
+import CryptoJS from "crypto-js";
 import sha256 from 'crypto-js/sha256';
 import parse from 'url-parse';
 
@@ -11,7 +12,7 @@ const processJson = (data) => {
     data.forEach((item) => {
         signature += item;
     });
-    return sha256(signature);
+    return sha256(signature).toString(CryptoJS.enc.Hex);
 };
 
 /**
