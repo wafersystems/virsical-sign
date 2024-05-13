@@ -17,7 +17,7 @@
     "virsical"
   ],
   "dependencies": {
-    "crypto-js": "^3.3.0",
+    "crypto-js": "^4.2.0",
     "js-sha256": "^0.9.0",
     "url-parse": "^1.5.9"
   },
